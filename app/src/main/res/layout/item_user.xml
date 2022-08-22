@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10sp"
+    android:weightSum="13"
+    android:id="@+id/linear"
+
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="48dp"
+        android:src="@drawable/contact"
+        android:id="@+id/cardview"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="9"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:text="Name"
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            tools:text="Name"
+            android:layout_marginStart="10sp"
+            android:textSize="20sp"
+            android:layout_marginLeft="10sp"/>
+
+        <TextView
+            android:text="Phone"
+            android:id="@+id/tvPhone"
+            android:padding="5dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginStart="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="TextView"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:src="@drawable/delete"
+        />
+
+</LinearLayout>
+
